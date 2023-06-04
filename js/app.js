@@ -23,6 +23,7 @@ function encriptar(){
     var texto = document.getElementById('caja-texto').value;
     var imagen = document.getElementById('imagen');
     var etiqueta = document.getElementById('respuesta');
+    var boton_copiar = document.getElementById('copiar')
 
     var mensaje = '';
     for (let indice in texto){
@@ -48,12 +49,14 @@ function encriptar(){
     imagen.style.display = 'none';
     etiqueta.style.display = 'inherit';
     etiqueta.innerHTML = mensaje;
+    boton_copiar.style.display = 'inherit';
 }
 
 function desencriptar(){
     var texto = document.getElementById('caja-texto').value;
     var imagen = document.getElementById('imagen');
     var etiqueta = document.getElementById('respuesta');
+    var boton_copiar = document.getElementById('copiar')
 
     var mensaje = '';
     texto = reemplazar(texto, 'ai', 'a');
@@ -65,6 +68,13 @@ function desencriptar(){
     imagen.style.display = 'none';
     etiqueta.style.display = 'inherit';
     etiqueta.innerHTML = texto;
+    boton_copiar.style.display = 'inherit';
+}
+
+function copiar(){
+    var text_area = document.getElementById('respuesta').innerHTML;
+    var caja_texto = document.getElementById('caja-texto');
+    caja_texto.value = text_area;
 }
 
 
@@ -73,3 +83,6 @@ boton_encriptar.onclick = encriptar;
 
 var boton_desencritar = document.getElementById('desencriptar');
 boton_desencritar.onclick = desencriptar;
+
+var boton_copiar = document.getElementById('copiar');
+boton_copiar.onclick = copiar;
