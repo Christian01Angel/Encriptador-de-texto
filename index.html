@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>Encriptador de texto</title>
+</head>
+<body>
+    <main class="principal">
+        <div class="contenedor-ingreso">
+            <ul class="elementos">
+                <li><img src="imagenes/Vector.png" class="logo"></li>
+                <li><input type="text" class="caja-texto" value="Ingrese texto aqui" id="caja-texto"></li>
+            </ul>
+            <ul class="botones">
+                <li>
+                    <p class="sugerencia"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-exclamation-circle-fill" viewBox="0 0 16 16">
+                    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8 4a.905.905 0 0 0-.9.995l.35 3.507a.552.552 0 0 0 1.1 0l.35-3.507A.905.905 0 0 0 8 4zm.002 6a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/>
+                    </svg> Solo letras en mminúscula y sin acentos</p>
+                </li>
+                <li>
+                    <input type="button" value="Encriptar" class="boton" id="encriptar">
+                    <input type="button" value="Desencriptar" class="boton" id="desencriptar">
+                </li>
+                </div>
+            </ul>
+        </div>
+        <div class="contenedor-resultado">
+            <img src="imagenes/1.png" class="imagen" id="imagen">
+            <textarea id="respuesta" class="respuesta" readonly></textarea>
+        </div>
+    </main>
+    <script src="js/app.js"></script>
+</body>
+</html>
