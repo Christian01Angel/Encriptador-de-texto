@@ -1,0 +1,78 @@
+body{
+    background-color: #e5e5e5;
+}
+.principal{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    width: 65%;
+    margin: auto;
+    margin-top: 4%;
+    background-color: #F3F5FC;
+    height: 95%;
+}
+.contenedor-ingreso{
+    width: 65%;
+    align-content: space-between;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.elementos{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-around;
+    height: 50%;
+}
+.logo{
+    padding: 25px 0 0 50px;
+}
+.caja-texto{
+    border: none;
+    background-color: #F3F5FC;
+    color: #0A3871;
+    width: 400px;
+    height: 48px;
+    margin-left: 120px;
+}
+.botones{
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.sugerencia{
+    padding-bottom: 15px;
+    font-size: 12px;
+}
+.boton{
+    width: 160px;
+    height: 40px;
+    border-radius: 24px;
+    flex-grow: 0;
+}
+#encriptar{
+    background: #0A3871;
+    color: white;
+}
+#desencriptar{
+    background: #D8DFE8;
+}
+.contenedor-resultado{
+    width: 35%;
+    height: 95%;
+}
+.imagen{
+    width: 75%;
+    
+}
+.respuesta{
+    margin: 10px;
+    border: none;
+    width: 67.5%;
+    height: 540px;
+    border-radius: 15px;
+    resize: none;
+    display: none;
+}
